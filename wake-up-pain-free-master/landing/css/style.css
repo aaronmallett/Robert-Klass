@@ -1,0 +1,256 @@
+@font-face {
+	font-family: OpenSans-Semibold;
+	src: url(../fonts/open-sans/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+	font-family: OpenSans-Regular;
+	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+#header {
+	width: 70%;
+	height: 120px;
+	margin: 0 auto;
+}
+
+#header img {
+	float: left;
+	margin-top: 18px;
+}
+
+#panel1 {
+	width: 100%;
+	margin: 0 auto;
+	background: url(../images/background-top.jpg)no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+#panel1-content {
+	width: 29%;
+	margin: 0 auto;
+	float: right;
+	margin-right: 15%;
+	color: white;
+	position: relative;
+}
+
+#panel1-content h2{
+	font-family: 'lato', sans-serif;
+	font-weight: bold;
+	font-size: 3.5em;
+ 	text-shadow: 0px 0px 20px #054c94;
+ 	text-align: left;
+}
+
+#panel1-content p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+  	letter-spacing: 0.5pt;
+  	text-shadow: 0px 0px 10px #054c94;
+  	text-align: left;
+}
+
+#guy {
+	background-image: url(../images/back.png);
+	background-repeat: no-repeat;
+	height: 854px;
+	width:624px;
+	bottom: 0;
+	left: 50px;
+	position: absolute;
+	background-position: bottom left;
+}
+
+#panel1-content a {
+	text-decoration: none;
+	color: white;
+	background: #0e3278;
+	padding: 10px;
+	border-radius: 2px;
+	border: solid white 1.25px;
+	font-size: 15pt;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 4em;
+}
+
+#panel1-content a:hover {
+	background: #234b98;
+	text-decoration: none;
+}
+
+#panel2 {
+	background: #faf7f7;
+	overflow: auto;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+  	border-top: solid #C5C4C4 1px;
+  	border-bottom: solid #C5C4C4 1px;
+
+}
+
+#full-site {
+	display: inline;
+}
+
+#panel2 #mobile-site {
+	display: none;
+}
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#icons {
+	width: 100%;
+	text-align: center;
+	overflow: auto;
+}
+
+
+.wrapper h2 {
+	color: #0e3278;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 26pt;
+	display: block;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.wrapper span {
+	color: #0e3278;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 24pt;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#panel3 {
+	background: url(../images/background-bottom.jpg)no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+}
+
+#panel3 .wrapper {
+	width: 50%;
+}
+
+#panel3 .wrapper h2, h3, p {
+	text-align: center;
+}
+
+#panel3 .wrapper h2 {
+	color: #063da2;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+  	padding-top: 70px;
+}
+
+#panel3 .wrapper h3 {
+	color: #063da2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-bottom: 70px;
+}
+
+#panel3 .wrapper p{
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	font-size: 14pt;
+}
+
+#footer {
+	width: 100%;
+	overflow: auto;
+	margin: 0 auto;
+	background: #0e3278;
+	position: relative;
+}
+
+#triangle {
+	background-image: url(../images/triangle.svg);
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 50px;
+	background-position: top center;
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+	margin-right: -40px;
+	margin-bottom: -3px;
+}
+
+input {
+	width: 290px;
+  	height: 40px;
+  	border: none;
+  	border-radius: 10px;
+  	padding-left: 10px;
+  	clear: none;
+  	float: left;
+  	font-variant: small-caps;
+  	font-size: 14pt;
+}
+
+input#input-email {
+  	margin: 0 15px;
+}
+
+#about-pain{ 
+	width: 100%;
+}
+
+#form {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#top-three {
+	height: 40px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+#button {
+	text-align: center;
+}
+
+button#signup {
+  /* margin: 0 auto; */
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background: #0e3278;
+  border: solid 2px white;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 40px;
+}
+
+button#signup:hover {
+	border: solid 2px #0e3278;
+	background: white;
+	color: #0e3278;
+}
+
+#footer p{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-variant: small-caps;
+	font-size: 11pt;
+}
+

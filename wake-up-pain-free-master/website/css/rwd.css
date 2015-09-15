@@ -1,0 +1,124 @@
+@media (max-width: 1090px) {
+	#navbar {
+		font-size: 12px;
+	}
+
+	#nav-logo img {
+		width: 280px;
+	}
+
+	#nav-logo h1 {
+		display: hidden;
+	}
+
+	#nav-content {
+		width: 90%;
+	}
+}
+
+@media (max-width: 770px) {
+	#mobile-nav {
+		display: inline !important;
+	}
+
+	#nav-links {
+		display: none;
+	}
+
+	#other-links {
+		display: none;
+	}
+
+	#nav-content {
+		position: relative;
+	}
+
+	.fancy-content {
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+	.wrapper {
+		width: 80%;
+	}
+
+	.panel2-content {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	.panel2-content h2 {
+		font-size: 3.5em;
+	}
+
+	#panel3-content {
+		width: 80%;
+		text-align: center;
+	}
+
+	#panel3-content img{
+		float: none;
+		padding-right: 0;
+	}
+
+	
+
+	#panel3-content span {
+		font-size: none;
+	}
+
+	#panel3-content p {
+		padding-top: 30px;
+	}
+
+	#panel3-content ul {
+		width: 100%;
+		font-size: 10pt;
+	}
+
+	#terms {
+		width: 80%;
+	}
+
+	#terms li {
+		clear: both;
+		float: none;
+		text-align: center;
+	}
+
+	#content {
+		width: 80%;
+	}
+
+	#navbar {
+		position: fixed;
+		z-index: 100;
+	}
+
+	#content-header {
+		padding-top: 100px;
+	}
+
+	#map-canvas{
+		width: 100%;
+		height: 40%;
+		margin: 0 auto;
+	}
+
+	.caret-panel {
+		display: none;
+	}
+
+	.wrapper {
+		overflow: auto;
+	}
+
+	#fancy-panel {
+		background-attachment: inherit;
+	}
+
+	#fancy-panel-2 {
+		background-attachment: inherit;
+	}
+}
