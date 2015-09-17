@@ -16,6 +16,14 @@
 	}
 }
 
+@media (max-width: 790px) {
+
+	div#doctor{
+		float: none;
+		margin: 0 auto;
+	}
+}
+
 @media (max-width: 770px) {
 	#mobile-nav {
 		display: inline !important;

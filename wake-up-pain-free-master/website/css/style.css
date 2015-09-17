@@ -455,6 +455,12 @@ CONTENT
 	padding-bottom: 10px;
 }
 
+div#doctor {
+	width: 200px;
+	height: 270px;
+	float: left;
+}
+
 #content video {
 	margin-top: 50px;
 }
