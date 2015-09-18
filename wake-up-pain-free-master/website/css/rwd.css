@@ -37,6 +37,12 @@
 		display: none;
 	}
 
+	#mobile-nav .mobile-dropdown {
+		margin-left: -160px;
+		margin-top: -60px;
+		background: #dedede;
+	}
+
 	#nav-content {
 		position: relative;
 	}

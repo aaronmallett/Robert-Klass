@@ -164,6 +164,7 @@ ul.dropdown-menu {
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
+	background-position-y: 80px;
 }
 
 .fancy-content {
