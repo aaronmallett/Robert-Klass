@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Resources | Wake Up Pain Free</title>
+    <title>Resources | Klass Chiropractic</title>
 
     <!-- Bootstrap -->
     <!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -12,6 +12,8 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/rwd.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   </head>
 
@@ -50,7 +52,7 @@
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </button>
           <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
-           <li class="dropdown hover-nav"><a data-toggle="dropdown" class="dropdown-toggle" href="about.html">ABOUT</a>
+            <li class="dropdown hover-nav"><a id="about-dropdown" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a>
               <ul class="dropdown-menu mobile-dropdown">
                 <li><a href="about.html">WHAT IS MUA?</a></li>
                 <li><a href="meetthedoctor.html">MEET THE DOCTOR</a></li>
@@ -73,7 +75,7 @@
       <div id="header-text">
         <h1>Resources</h1>
         <hr>
-        <p>Contact us at 1.844.MUA.DOCS or info@wakeuppainfree.com for more information.</p>
+        <p>Contact us at 1.844.MUA.DOCS or rklass@wakeuppainfree.com for more information.</p>
       </div>
     </div>
 
@@ -84,9 +86,9 @@
         <p>Dr. Gordon is commonly referred to as the MUA Pioneer. He has researched and developed the MUA technique over the last 30 years. Our own Dr. Robert Klass has taught under Dr. Gordon twice throughout his career.
         </p>
 
-        <a href="#">> View Dr. Gordon’s website here</a><br>
+        <a href="http://www.gordonmua.com/">> View Dr. Gordon’s website here</a><br>
 
-        <a href="#">> View a video of Dr. Gordon’s technique here</a>
+        <a href="http://www.youtube.com/watch?v=qlvo6D5VeM0">> View a video of Dr. Gordon’s technique here</a>
       </div>
 
       <div class="resources-text">
@@ -95,7 +97,7 @@
           HealthyState.org published a news story that covers MUA. This includes a patient testimonial
         </p>
 
-        <a href="#">> View the video here</a>
+        <a href="https://www.youtube.com/watch?v=DxSF2u33R8g">> View the video here</a>
       </div>
 
 
@@ -105,7 +107,7 @@
             The National Center for Biotechnology Information published a paper on the success of MUA for failed back surgery.
           </p>
 
-          <a href="">> View the paper here</a>
+          <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3315860/">> View the paper here</a>
         </div>
     </div>
 
@@ -157,6 +159,12 @@ pain over time.</p>
 
     <!--<script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>-->
+
+    <script>$('#mobile-nav .dropdown-menu').on('click', function(event){
+    // The event won't be propagated up to the document NODE and 
+    // therefore delegated events won't be fired
+    event.stopPropagation();
+});</script>
 
     <script src="js/app.js"></script>
     <script src="js/style.js"></script>

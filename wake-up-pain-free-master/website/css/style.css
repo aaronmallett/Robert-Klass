@@ -160,11 +160,10 @@ ul.dropdown-menu {
 #fancy-panel {
 	width: 100%;
 	overflow: auto;
-	background: url(../images/panel1.jpg)no-repeat;
+	background: url(../images/panel1-2.jpg)no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
-	background-position-y: 80px;
 }
 
 .fancy-content {
@@ -534,6 +533,21 @@ div#doctor {
 #quote {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
+}
+
+#content #qualify-button {
+	color: white;
+	line-height: 2;
+}
+
+.panel-heading{
+	border-bottom: none;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	height: 50px;
+	width: 300px;
+	text-align: center;
+	background: #49c28c;
 }
 /**************************
 GOOGLE MAPS

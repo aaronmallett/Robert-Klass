@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Contact Us | Wake Up Pain Free</title>
+    <title>Contact Us | Klass Chiropractic</title>
 
     <!-- Bootstrap -->
     <!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -12,6 +12,8 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/rwd.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   </head>
 
@@ -50,7 +52,7 @@
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </button>
           <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
-            <li class="dropdown hover-nav"><a data-toggle="dropdown" class="dropdown-toggle" href="about.html">ABOUT</a>
+            <li class="dropdown hover-nav"><a id="about-dropdown" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a>
               <ul class="dropdown-menu mobile-dropdown">
                 <li><a href="about.html">WHAT IS MUA?</a></li>
                 <li><a href="meetthedoctor.html">MEET THE DOCTOR</a></li>
@@ -73,7 +75,7 @@
       <div id="header-text">
         <h1>Contact</h1>
         <hr>
-        <p>Contact us at 1.844.MUA.DOCS or info@wakeuppainfree.com for more information.</p>
+        <p>Contact us at 1.844.MUA.DOCS or rklass@wakeuppainfree.com for more information.</p>
       </div>
     </div>
 
@@ -87,10 +89,10 @@
 
 
 
-      Phone: 516.330.8810<br>
-      Email: <a href="mailto:info@wakeuppainfree.com">info@wakeuppainfree.com<br>
-      <a href="#"><img src="images/linkedin.jpg"></a> LinkedIn URL</p>
-      <div id="map-canvas"></div>
+      Phone: 1.844.MUA.DOCS<br>
+      Email: <a href="mailto:info@wakeuppainfree.com">rklass@wakeuppainfree.com<br>
+      <a href="http://www.linkedin.com/in/robertklass"><img src="images/linkedin.jpg"></a></p>
+      <div id="map-canvas" style="clear: both; margin-top: 50px;"></div>
     </div>
 
     <div id="footer">
@@ -130,6 +132,12 @@ pain over time.</p>
 
     <!--<script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>-->
+
+    <script>$('#mobile-nav .dropdown-menu').on('click', function(event){
+    // The event won't be propagated up to the document NODE and 
+    // therefore delegated events won't be fired
+    event.stopPropagation();
+});</script>
 
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

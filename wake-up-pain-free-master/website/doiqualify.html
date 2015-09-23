@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Do I Qualify? | Wake Up Pain Free</title>
+    <title>Do I Qualify? | Klass Chiropractic</title>
 
     <!-- Bootstrap -->
     <!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -12,6 +12,8 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/rwd.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   </head>
 
@@ -50,7 +52,7 @@
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </button>
           <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
-           <li class="dropdown hover-nav"><a data-toggle="dropdown" class="dropdown-toggle" href="about.html">ABOUT</a>
+            <li class="dropdown hover-nav"><a id="about-dropdown" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a>
               <ul class="dropdown-menu mobile-dropdown">
                 <li><a href="about.html">WHAT IS MUA?</a></li>
                 <li><a href="meetthedoctor.html">MEET THE DOCTOR</a></li>
@@ -73,7 +75,7 @@
       <div id="header-text">
         <h1>Do I Qualify?</h1>
         <hr>
-        <p>MUA is an extremely effective tool for chronic pain relief, and most of those who qualify experience improved range of motion, improved outlook and the ability to continue rehabilitation to help the scar tissues heal. To see if you're a good candidate for MUA, answer this short questionnaire. If you answer yes to all of these questions, MUA may be right for you. Contact us at 516-330-8810 or email address for more information.</p>
+        <p>MUA is an extremely effective tool for chronic pain relief, and most of those who qualify experience improved range of motion, improved outlook and the ability to continue rehabilitation to help the scar tissues heal. To see if you're a good candidate for MUA, answer this short questionnaire. If you answer yes to all of these questions, MUA may be right for you. Contact us at 1.844.MUA.DOCS or email address for more information.</p>
       </div>
     </div>
 
@@ -81,17 +83,36 @@
       <hr>
 
       <p><strong>MUA isn't for everyone. To see if you pre-qualify, answer these four questions.</strong></p>
-      <p class="numbers"><img src="images/numbers-1.jpg"><strong>Is your condition one that is known to respond well to conservative and manipulative therapy?</strong>Herniated disc or degenerative disc disease without fragmentation with or without radiculopathy. Neck and/or back pain. Facet syndrome. Scar tissue/adhesive contractures of the neck or back. Myofascial pain syndrome Acute and chronic muscle pain and contracture/spasm. Decreased spinal range of motion. Arthritis. Cervicobrachial syndrome.  Cervicogenic headaches. Failed back surgery. Functional biomechanical dysfunction syndromes.
-</p>
-      
-      <p><img src="images/numbers-2.jpg"><strong>Do you have imaging studies demonstrating one or more of the conditions above?</strong></p>
 
-      <p><img src="images/numbers-3.jpg"><strong>Have you attempted pain medication, physical therapy, injections, chiropractic, massage or even surgery with little to no results?
-</strong></p>
+      <div id="#accordian">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <a id="qualify-button" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordian" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            
+          <h4 class="panel-title">
+            
 
-      <p><img src="images/numbers-4.jpg"><strong>Does your condition cause you disability, such as preventing or limiting you from working or performing daily or recreational activities?</strong></p>
+              Click here to see if you still qualify
 
-      <p style="text-align: center; padding-top: 70px"><span>If you answered yes to all of these questions, then MUA may be right for you. Contact Dr. Klass at 1.844.MUA.DOCS to find out more.</span></p>
+            </a>
+          </h4>
+        </div>
+
+
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+        <p class="numbers"><img src="images/numbers-1.jpg"><strong>Is your condition one that is known to respond well to conservative and manipulative therapy?</strong>Herniated disc or degenerative disc disease without fragmentation with or without radiculopathy. Neck and/or back pain. Facet syndrome. Scar tissue/adhesive contractures of the neck or back. Myofascial pain syndrome Acute and chronic muscle pain and contracture/spasm. Decreased spinal range of motion. Arthritis. Cervicobrachial syndrome.  Cervicogenic headaches. Failed back surgery. Functional biomechanical dysfunction syndromes.
+  </p>
+        
+        <p><img src="images/numbers-2.jpg"><strong>Do you have imaging studies demonstrating one or more of the conditions above?</strong></p>
+
+        <p><img src="images/numbers-3.jpg"><strong>Have you attempted pain medication, physical therapy, injections, chiropractic, massage or even surgery with little to no results?
+  </strong></p>
+
+        <p><img src="images/numbers-4.jpg"><strong>Does your condition cause you disability, such as preventing or limiting you from working or performing daily or recreational activities?</strong></p>
+
+        <p style="text-align: center; padding-top: 70px"><span>If you answered yes to all of these questions, then MUA may be right for you. Contact Dr. Klass at 1.844.MUA.DOCS to find out more.</span></p>
+      </div>
+    </div>
       
     </div>
 
@@ -139,13 +160,23 @@ pain over time.</p>
   ga('send', 'pageview');
 
 </script>
+
+
     <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
     <!--<script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>-->
 
+    <script>$('#mobile-nav .dropdown-menu').on('click', function(event){
+    // The event won't be propagated up to the document NODE and 
+    // therefore delegated events won't be fired
+    event.stopPropagation();
+});</script>
+
     <script src="js/app.js"></script>
     <script src="js/style.js"></script>
-
+    <script>
+    $('#collapseOne').collapse("hide");
+    </script>
   </body>
 </html>

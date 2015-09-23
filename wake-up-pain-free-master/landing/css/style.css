@@ -267,5 +267,8 @@ button#signup:hover {
 	font-family: 'Open Sans', sans-serif;
 	font-variant: small-caps;
 	font-size: 11pt;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
