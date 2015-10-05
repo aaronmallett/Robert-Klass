@@ -13,6 +13,7 @@ $(document).ready(function(){
 	//setSpacerDiv3();
 
 	//setSpacerDiv4();
+	termsHeight1();
 
 });
 
@@ -29,6 +30,7 @@ $(window).resize(function(){
 	//setSpacerDiv3();
 
 	//setSpacerDiv4();
+	termsHeight1();
 
 });
 
@@ -74,6 +76,26 @@ function setSpacerDiv4(){
 
 	$("#spacer4").height(emptySpace/2);
 }
+
+function termsHeight1(){
+
+	var footerText = $('#footer-text').outerHeight(true);
+
+	$("#terms").height(footerText + 50);
+
+
+}
+
+$(window).resize(function(){
+
+	var footerText = $('#footer-text').outerHeight(true);
+
+	if ($(window).width() <= 575){	
+
+		$("#terms").height(footerText + 80);
+	}	
+});
+
 
 $(window).scroll(function(){
 

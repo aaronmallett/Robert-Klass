@@ -270,6 +270,7 @@ FOOTER - HOME
 	background-size: cover;
 	overflow: auto;
 	width: 100%;
+	position: relative;
 }
 
 #panel3-content {
@@ -314,7 +315,19 @@ FOOTER - HOME
 }
 
 #terms {
-	width: 1070px;
+	/*width: 1070px;
+	color: white;
+	color: white;
+  	text-decoration: none;
+  	list-style: none;
+  	margin: 0 auto;
+  	text-align:center;
+  	clear: both;
+  	padding:0;
+  	padding-top: 20px;*/
+
+  	width: 80%;
+  	height: 160px;
 	color: white;
 	color: white;
   	text-decoration: none;
@@ -356,13 +369,35 @@ span#f-pc {
 	font-size: 9pt;
 }
 
-#footer-text {
-	font-size: 10pt;
+#footer-text-mobile {
+	/*font-size: 10pt;
 	font-family: 'Open Sans', sans-serif;
 	color: #0195b7;
 	clear: both;
 	padding: 0px 20px;
+  	text-align: center;*/
+
+  	font-size: 10pt;
+	font-family: 'Open Sans', sans-serif;
+	color: #0195b7;
+	clear: both;
+	padding: 10px 20px;
+	margin-bottom: 0;
   	text-align: center;
+  	position: fixed;
+  	bottom: 0;
+  	background-color: #063d4c;
+}
+
+#footer-text {
+	font-size: 10pt;
+    font-family: 'Open Sans', sans-serif;
+    color: #0195b7;
+    clear: both;
+    padding: 0px 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -435,6 +470,7 @@ CONTENT
 	width: 100%;
 	overflow: auto;
 	background-color: #003d4b;
+	position: relative;
 }
 
 #footer #panel3-content ul {

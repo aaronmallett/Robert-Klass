@@ -1,3 +1,15 @@
+@media (max-width: 1175px) {
+	#terms {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1306px) {
+	#terms {
+		width: 90%;
+	}
+}
+
 @media (max-width: 1090px) {
 	#navbar {
 		font-size: 12px;
@@ -21,6 +33,10 @@
 	div#doctor{
 		float: none;
 		margin: 0 auto;
+	}
+
+	#footer-text-mobile{
+		display:none;
 	}
 }
 
@@ -76,8 +92,6 @@
 		padding-right: 0;
 	}
 
-	
-
 	#panel3-content span {
 		font-size: none;
 	}
@@ -93,12 +107,19 @@
 
 	#terms {
 		width: 80%;
+		padding-top: 5px;
+		padding-bottom: 10px;
 	}
 
 	#terms li {
 		clear: both;
 		float: none;
 		text-align: center;
+		font-size: 8pt;
+	}
+
+	#footer-text {
+		font-size: 8pt;
 	}
 
 	#content {
