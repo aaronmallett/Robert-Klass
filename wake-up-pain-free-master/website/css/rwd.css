@@ -10,10 +10,17 @@
 	}
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1280px) {
 	#navbar {
 		font-size: 12px;
 	}
+	#nav-content {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1090px) {
+	
 
 	#nav-logo img {
 		width: 280px;
@@ -23,9 +30,7 @@
 		display: hidden;
 	}
 
-	#nav-content {
-		width: 90%;
-	}
+	
 }
 
 @media (max-width: 790px) {
