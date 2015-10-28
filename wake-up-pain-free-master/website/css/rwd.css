@@ -33,6 +33,22 @@
 	
 }
 
+@media (max-width: 1032px) {
+	.links {
+		width: 100%;
+		clear: both;
+	}
+
+	#other-links {
+		float: right;
+	}
+
+	#nav-links {
+		float: left;
+		padding: 0;
+	}
+}
+
 @media (max-width: 790px) {
 
 	div#doctor{
